@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style type="text/css">
+            img.x1
+            {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+            }
+            img.x2
+            {
+                position: absolute;
+                left: 0;
+                top: 100;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <p><b>Catatan:</b> Netscape 4 tidak mendukung properti "z-index".</p>
+        <h1>Sepertinya Heading ini terhalang oleh gambar</h1>
+        <img class="x1" src="https://cdn.idntimes.com/content-images/community/2022/04/12-70c6d66a74f3cea6c9573bee957f66ff-58775ab73ab4817547b20b5292c0a0d6.jpg" width="100" height="80">
+        <p>Nilai default z-index adalah 0. Z-index 1 memiliki prioritas lebih tinggi, sedangkan Z-index -1 memiliki prioritas lebih rendah.</p>
+        <p></p>
+        <img class="x2" src="https://cdn.idntimes.com/content-images/community/2023/02/whatsapp-image-2023-02-13-at-230359-f1457542cf8639ba709073e2e5b456d1-b7e553ce3be471e96575a153ed4b2229.jpeg" width="100" height="80">
+        <p>Sekarang Anda bisa membandingkan dengan tampilan di bagian bawah ini. Apakah masih terhalang gambar?</p>
+    </body>
+</html>
